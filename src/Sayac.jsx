@@ -16,6 +16,7 @@ const Sayac = () => {
       </button>
       <span className="text-2xl">{sayac}</span>
       <button
+        disabled={sayac === 0 && true}
         className="bg-red-700 rounded-lg p-3 text-white text-2xl	m-5"
         onClick={() => {
           setSayac(sayac - 1);
